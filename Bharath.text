@@ -1,0 +1,99 @@
+Microsoft Windows [Version 10.0.19044.2251]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\bhavyy>ipconfig /all
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : IN03LTC4Q47N3
+   Primary Dns Suffix  . . . . . . . : org.nasdaqomx.com
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : org.nasdaqomx.com
+                                       corp.ad.local
+                                       tclk.se.om.com
+                                       mgm.om
+                                       tde.nasdaq.com
+
+Ethernet adapter Ethernet 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Intel(R) Ethernet Connection (13) I219-LM
+   Physical Address. . . . . . . . . : A0-29-19-71-38-1E
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   Physical Address. . . . . . . . . : 20-C1-9B-1D-B8-3F
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
+   Physical Address. . . . . . . . . : 22-C1-9B-1D-B8-3E
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . : corp.capgemini.com
+   Description . . . . . . . . . . . : Intel(R) Wi-Fi 6 AX201 160MHz
+   Physical Address. . . . . . . . . : 20-C1-9B-1D-B8-3E
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::cbca:46b:672e:e6c0%12(Preferred)
+   IPv4 Address. . . . . . . . . . . : 10.110.71.114(Preferred)
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : Friday, November 18, 2022 2:39:12 PM
+   Lease Expires . . . . . . . . . . : Friday, November 18, 2022 3:39:12 PM
+   Default Gateway . . . . . . . . . : 10.110.71.1
+   DHCP Server . . . . . . . . . . . : 10.51.5.150
+   DHCPv6 IAID . . . . . . . . . . . : 119587227
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2A-85-54-01-A0-29-19-EE-EB-6E
+   DNS Servers . . . . . . . . . . . : 10.5.5.5
+                                       10.51.5.150
+                                       10.76.5.100
+   Primary WINS Server . . . . . . . : 10.48.132.119
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Bluetooth Device (Personal Area Network)
+   Physical Address. . . . . . . . . : 20-C1-9B-1D-B8-42
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+
+C:\Users\bhavyy>tracert in03offvpnfw01.nimi.com
+
+Tracing route to in03offvpnfw01.nimi.com [103.78.107.225]
+over a maximum of 30 hops:
+
+  1     2 ms     2 ms     2 ms  in-blr-dtp-b4f2-cscs-std-01-vl804.net.capgemini.com [10.110.71.2]
+  2     1 ms     1 ms     1 ms  osblr-div-f3d1-core-pri-te1/1/1.net.capgemini.com [10.77.76.97]
+  3     2 ms     2 ms     1 ms  10.237.250.61
+  4     2 ms     3 ms     3 ms  blr1fw.corp.capgemini.com [10.58.216.77]
+  5     2 ms     2 ms     1 ms  202.60.62.3
+  6    13 ms     5 ms     2 ms  aes-static-213.51.22.125.airtel.in [125.22.51.213]
+  7     9 ms    10 ms     9 ms  116.119.106.150
+  8     *        *        *     Request timed out.
+  9    35 ms    40 ms    38 ms  115.255.253.6
+ 10    29 ms    28 ms    29 ms  115.249.141.5
+ 11     *        *        *     Request timed out.
+ 12     *        *        *     Request timed out.
+ 13    27 ms    27 ms    30 ms  103.78.107.225
+
+Trace complete.
+
+C:\Users\bhavyy>
